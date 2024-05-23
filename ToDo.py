@@ -28,14 +28,12 @@ def update_listbox():
     for task in todo_list:
         task_listbox.insert(tk.END, task)
 
-# Initialize main window
+
 root = tk.Tk()
 root.title("To-Do List App")
 
-# Initialize to-do list
 todo_list = []
 
-# Create and place widgets
 frame = tk.Frame(root)
 frame.pack(pady=10)
 
@@ -57,5 +55,4 @@ remove_button.pack(pady=5)
 clear_button = tk.Button(frame, text="Clear List", command=clear_list)
 clear_button.pack(pady=5)
 
-# Run the application
 root.mainloop()
